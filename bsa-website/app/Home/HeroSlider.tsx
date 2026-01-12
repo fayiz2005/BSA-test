@@ -18,14 +18,14 @@ export default function HeroSlider() {
   const slides = useMemo<Slide[]>(
     () => [
       {
-        src: "https://images.pexels.com/photos/7242659/pexels-photo-7242659.jpeg?_gl=1*ytibha*_ga*MTIwNzQ2NTIxMi4xNzY4MDkzMzA0*_ga_8JE65Q40S6*czE3NjgwOTMzMDMkbzEkZzEkdDE3NjgwOTQ3MTAkajMxJGwwJGgw",
+         src: "https://images.unsplash.com/photo-1592021482992-f83e6ef66dcb?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         alt: "Bangladesh-themed background",
         eyebrow: "Bangladesh Student Association · UBC",
         title: "Community, culture, connection",
         subtitle: "Events, socials, and support for Bangladeshi students at UBC.",
       },
       {
-        src: "https://images.unsplash.com/photo-1592021482992-f83e6ef66dcb?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+       src: "https://images.pexels.com/photos/7242659/pexels-photo-7242659.jpeg?_gl=1*ytibha*_ga*MTIwNzQ2NTIxMi4xNzY4MDkzMzA0*_ga_8JE65Q40S6*czE3NjgwOTMzMDMkbzEkZzEkdDE3NjgwOTQ3MTAkajMxJGwwJGgw",
         alt: "Students at a campus event",
         eyebrow: "Open to all UBC students",
         title: "Join our events",
