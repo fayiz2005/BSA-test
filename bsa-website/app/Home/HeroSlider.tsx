@@ -41,14 +41,6 @@ export default function HeroSlider() {
       subtitle:
         "Make friends, share traditions, and feel at home — whether it’s your first week at UBC or your final year.",
     },
-    {
-      src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop",
-      alt: "Students networking and collaborating",
-      eyebrow: "Growth · Support · Networking",
-      title: "Build beyond campus",
-      subtitle:
-        "Professional development, mentorship, and community-focused networking like Connect Three — for students of all backgrounds.",
-    },
     ],
     []
   );
