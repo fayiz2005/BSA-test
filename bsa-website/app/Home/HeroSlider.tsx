@@ -18,26 +18,37 @@ export default function HeroSlider() {
   const slides = useMemo<Slide[]>(
     () => [
       {
-         src: "https://images.unsplash.com/photo-1592021482992-f83e6ef66dcb?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Bangladesh-themed background",
-        eyebrow: "Bangladesh Student Association · UBC",
-        title: "Community, culture, connection",
-        subtitle: "Events, socials, and support for Bangladeshi students at UBC.",
-      },
-      {
-       src: "https://images.pexels.com/photos/7242659/pexels-photo-7242659.jpeg?_gl=1*ytibha*_ga*MTIwNzQ2NTIxMi4xNzY4MDkzMzA0*_ga_8JE65Q40S6*czE3NjgwOTMzMDMkbzEkZzEkdDE3NjgwOTQ3MTAkajMxJGwwJGgw",
-        alt: "Students at a campus event",
-        eyebrow: "Open to all UBC students",
-        title: "Join our events",
-        subtitle: "Welcome socials, cultural nights, and collaborations across campus.",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1692639453905-6cf932458392?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "Group photo vibe",
-        eyebrow: "Get involved",
-        title: "Meet the team",
-        subtitle: "Volunteer, lead projects, and help grow the community.",
-      },
+      src: "https://images.unsplash.com/photo-1592021482992-f83e6ef66dcb?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Bangladeshi Students’ Association at UBC",
+      eyebrow: "Bangladeshi Students’ Association · UBC",
+      title: "দেশের বাইরে দেশের বাড়ি",
+      subtitle:
+        "Home Away from Home — Hello Bondhura! A student-led community celebrating Bangladeshi culture and belonging at UBC.",
+    },
+    {
+      src: "https://images.pexels.com/photos/7242659/pexels-photo-7242659.jpeg?_gl=1*ytibha*_ga*MTIwNzQ2NTIxMi4xNzY4MDkzMzA0*_ga_8JE65Q40S6*czE3NjgwOTMzMDMkbzEkZzEkdDE3NjgwOTQ3MTAkajMxJGwwJGgw",
+      alt: "Students at a campus event",
+      eyebrow: "Culture · Celebrations · Memories",
+      title: "Celebrate together",
+      subtitle:
+        "From Pohela Boishakh and Boshonto Boron to cultural nights and formal galas — we bring the community together.",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1692639453905-6cf932458392?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Friends talking and connecting",
+      eyebrow: "Connections that last",
+      title: "Find your people",
+      subtitle:
+        "Make friends, share traditions, and feel at home — whether it’s your first week at UBC or your final year.",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2070&auto=format&fit=crop",
+      alt: "Students networking and collaborating",
+      eyebrow: "Growth · Support · Networking",
+      title: "Build beyond campus",
+      subtitle:
+        "Professional development, mentorship, and community-focused networking like Connect Three — for students of all backgrounds.",
+    },
     ],
     []
   );
@@ -124,7 +135,7 @@ return (
             <div className="mt-7 flex flex-wrap gap-3">
               <a
                 href="#events"
-                className="rounded-xl bg-emerald-600 px-5 py-3 text-sm font-medium text-white hover:opacity-95"
+                className="rounded-xl bg-red-500 px-5 py-3 text-sm font-medium text-white hover:bg-red-600 transition"
                 onClick={resetTimer}
               >
                 See events
