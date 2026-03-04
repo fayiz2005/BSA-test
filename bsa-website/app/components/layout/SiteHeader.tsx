@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "./Container";
 
 const nav = [
@@ -14,9 +15,13 @@ export default function SiteHeader() {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
             <div className="relative h-8 w-8 overflow-hidden rounded-full border border-zinc-200">
-              <div className="absolute inset-0 bg-emerald-600" />
-              <div className="absolute left-1/2 top-1/2 h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-600" />
-            </div>
+                <Image
+                    src="/BSA_LOGO.png"
+                    alt="BDSA Logo"
+                    fill
+                    className="object-cover"
+                />
+                </div>
 
             <div className="leading-tight">
               <div className="text-sm font-semibold">Bangladesh Student Association</div>
