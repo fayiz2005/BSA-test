@@ -40,5 +40,4 @@ This project aims to replace an outdated Wix site with a faster, more maintainab
 
 ### 1) Clone the repo
 ```bash
-git clone <REPO_URL>
-cd <REPO_FOLDER>
+git clone https://github.com/fayiz2005/BSA-test.git
