@@ -29,7 +29,7 @@ import Container from "../components/layout/Container";
 
 export default function EventsSection() {
   return (
-    <section id="events" className="py-14">
+    <section id="events" className="border-t py-14">
       <Container>
         <div className="max-w-2xl">
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">
