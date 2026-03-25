@@ -32,6 +32,7 @@ export default function EventsSection() {
     <section id="events" className="border-t py-14">
       <Container>
         <div className="max-w-2xl">
+            
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-900">
             Events
           </h2>
