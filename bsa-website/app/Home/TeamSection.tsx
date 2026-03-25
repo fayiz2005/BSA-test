@@ -68,29 +68,32 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {team.map((member) => (
-            <div
-              key={member.name}
-              className="rounded-2xl border border-zinc-200 bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-            >
-              <div className="mx-auto h-28 w-28 overflow-hidden rounded-full border border-zinc-200">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={112}
-                  height={112}
-                  className="h-full w-full object-cover"
-                />
-              </div>
+        <div className="mt-8 overflow-x-auto">
+            <div className="flex gap-6 pb-4">
+                {team.map((member) => (
+                    <div
+                key={member.name}
+                className="min-w-[260px] max-w-[260px] flex-shrink-0 rounded-2xl border border-zinc-200 bg-white p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                <div className="mx-auto h-28 w-28 overflow-hidden rounded-full border border-zinc-200">
+                    <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={112}
+                    height={112}
+                    className="h-full w-full object-cover"
+                    />
+                </div>
 
-              <h3 className="mt-4 text-base font-semibold text-zinc-900">
-                {member.name}
-              </h3>
-              <p className="mt-1 text-sm text-zinc-600">{member.role}</p>
+                <h3 className="mt-4 text-base font-semibold text-zinc-900">
+                    {member.name}
+                </h3>
+                <p className="mt-1 text-sm text-zinc-600">{member.role}</p>
+                </div>
+            ))}
             </div>
-          ))}
         </div>
+
       </Container>
     </section>
   );
